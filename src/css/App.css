@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: darkgreen;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,57 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+h6 {
+  color: lightgrey;
+  
+}
+
+.closeEdit {
+  text-align: right;
+  
+}
+
+h2 {
+  color: darkslategray;
+  text-align: center;
+}
+
+h1 {
+  color: green;
+}
+
+.loginBut {
+  margin-left: 235px;
+}
+
+.signupBut {
+  margin-left: 220px;
+}
+/* h3 {
+  color: darkslategrey;
+  text-shadow: 3px 2px 2px #FFFF17;
+} */
+
+h5 {
+  text-align: right;
+  color: green;
+}
+
+/* h4 {
+ 
+  
+  
+} */
+
+p {
+  color:darkgoldenrod;
+  font-size: 13px;
+  
+}
+
+::placeholder {
+  color: green;
 }
