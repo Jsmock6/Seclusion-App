@@ -1,14 +1,15 @@
 import React from 'react';
 import {Table, Button} from 'reactstrap';
 import '../css/App.css';
-import '../css/GemsTable.css'
+import '../css/GemsTable.css';
+import APIURL from '../helpers/environment'
 
 
 
 const GemTable = (props) => {
 
 const deleteGem = (gem) => {
-    fetch(`http://localhost:3002/api/gem/${gem.id}`, {
+    fetch(`${APIURL}/api/gem/${gem.id}`, {
     method: 'DELETE',
     headers: new Headers ({
         'Content-Type': 'application/json', 

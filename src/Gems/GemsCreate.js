@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap';  
 import '../css/App.css';
+import APIURL from '../helpers/environment';
 
 
 const GemsCreate = (props) => {
@@ -12,7 +13,7 @@ const GemsCreate = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(locationType && description && locationAddress){
-            fetch('http://localhost:3002/api/gem/', {
+            fetch(`${APIURL}/api/gem`, {
                 method: 'POST',
                 body: JSON.stringify({locationType: locationType, description: description, locationCoordinates: locationCoordinates, locationAddress: locationAddress}), 
                 headers: new Headers({

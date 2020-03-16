@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import GemCreate from './GemsCreate';
 import GemTable from './GemsTable';
 import GemEdit from './GemsEdit'; 
+import APIURL from '../helpers/environment'
 
 
 const GemIndex = (props) => {
@@ -12,7 +13,7 @@ const GemIndex = (props) => {
     
     
     const fetchGems = () => {
-        fetch('http://localhost:3002/api/gem', {
+        fetch(`${APIURL}/api/gem`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',

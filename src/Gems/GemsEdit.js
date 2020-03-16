@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap'; 
-import '../css/GemsEdit.css'
+import '../css/GemsEdit.css';
+import APIURL from '../helpers/environment'
 
 
 

@@ -9,7 +9,7 @@ const FrontPage = (props) => {
         <Container fluid>
             
           <h1 className="display-3">!People</h1>
-          <p className="lead">- This is a simple App to enter locations of your favorite secluded, unfrequented, and downright undisturbed places -</p>
+          <p className="lead">- This is a simple App to enter and share locations of your favorite secluded, unfrequented, and downright undisturbed places -</p>
         </Container>
       </Jumbotron>
     </div>
