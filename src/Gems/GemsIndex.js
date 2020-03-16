@@ -4,6 +4,7 @@ import GemCreate from './GemsCreate';
 import GemTable from './GemsTable';
 import GemEdit from './GemsEdit'; 
 import APIURL from '../helpers/environment'
+import '../css/App.css';
 
 
 const GemIndex = (props) => {

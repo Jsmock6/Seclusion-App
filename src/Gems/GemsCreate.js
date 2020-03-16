@@ -39,6 +39,7 @@ const GemsCreate = (props) => {
        <br/>
        <br/>
        {/* <br/> */}
+       
         <h3>Enter your Hidden Gem</h3>
         <Form onSubmit= {handleSubmit}>
             <FormGroup>
@@ -67,6 +68,7 @@ const GemsCreate = (props) => {
             </FormGroup>
             <Button color= 'success'type= 'submit'>Click to Submit</Button>
         </Form>
+        
        </>
         
     )

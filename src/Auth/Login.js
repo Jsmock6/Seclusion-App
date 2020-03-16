@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
+import {Form, FormGroup, Input, Button} from 'reactstrap';
 import '../css/App.css'
 import APIURL from '../helpers/environment'
 
@@ -11,7 +11,7 @@ const Login = (props) => {
         event.preventDefault();
         if(username && password) {
 
-        fetch('http://localhost:3002/api/login',{
+        fetch(`${APIURL}/api/login`,{
             method: 'POST',
             body: JSON.stringify({username: username, passwordhash: password}),
             headers: new Headers ({
@@ -36,8 +36,7 @@ const Login = (props) => {
             <br/> */}
             <br/>
             <br/>
-            <br/>
-            <br/>
+            
 
 
 
@@ -52,8 +51,10 @@ const Login = (props) => {
                     {/* <Label htmlFor= 'password'>Password</Label> */}
                     <Input  placeholder= 'password' type="password" onChange={(e) => setPassword(e.target.value)} name= 'password' value={password}/>
                 </FormGroup>
-                    <Button className= 'loginBut' color= 'success' size= 'lg' type= 'submit'>Login</Button>
+                    <Button className= 'loginBut' color= 'success' size= 'md' type= 'submit'>Login</Button>
             </Form>
+
+           
         </div>
     )
 }

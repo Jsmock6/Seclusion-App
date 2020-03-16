@@ -49,12 +49,12 @@ h6 {
 }
 
 h2 {
-  color: darkslategray;
+  color: #2c7d2d;
   text-align: center;
 }
 
 h1 {
-  color: green;
+  color: #2c7d2d;
 }
 
 .loginBut {
@@ -71,14 +71,10 @@ h1 {
 
 h5 {
   text-align: right;
-  color: green;
+  color: goldenrod;
 }
 
-/* h4 {
- 
-  
-  
-} */
+
 
 p {
   color:darkgoldenrod;
@@ -86,6 +82,25 @@ p {
   
 }
 
-::placeholder {
-  color: green;
+/* ::placeholder {
+  color: #0A350E;
+} */
+
+/* .container {
+  background-color: #FDFFF4 !important;
+} */
+
+h3 {
+  color: #0A350E;
+  font-family: cursive;
+}
+
+.table {
+  /* background-image: url(./e0598e3ced1a102a6210bc6ecae0585d.gif);
+  background-size: 800px 580px; */
+  /* background-blend-mode: color; */
+  /* background-color: !important; */
+  /* border: solid green 5px !important; */
+  background-color: #0A350E !important;
+  
 }

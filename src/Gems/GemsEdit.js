@@ -13,7 +13,7 @@ const GemsEdit= (props) => {
 
     const GemsUpdate = (event, gem) => {
         event.preventDefault();
-        fetch(`http://localhost:3002/api/gem/${props.gemToUpdate.id}`, {
+        fetch(`${APIURL}/api/gem/${props.gemToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({locationType: editLocationType, locationAddress: editLocationAddress, locationCoordinates: editLocationCoordinates, description: editDes}),
             headers: new Headers ({

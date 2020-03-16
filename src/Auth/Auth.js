@@ -20,11 +20,9 @@ const Auth = (props) => {
     // }, [userId]) 
     return(
         <Container className= 'auth-container'>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <FrontPage />
+            
+            
             {/* <Sitebar /> */}
             <Row>
                 <Col md="6">

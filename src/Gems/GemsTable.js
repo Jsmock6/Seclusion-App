@@ -1,7 +1,7 @@
 import React from 'react';
 import {Table, Button} from 'reactstrap';
 import '../css/App.css';
-import '../css/GemsTable.css';
+
 import APIURL from '../helpers/environment'
 
 
@@ -45,7 +45,7 @@ const gemMapper = () => {
 
     return (
         <>
-        <h5>Enter your Hidden Gem</h5>
+        <h5>- a little peace and quiet never hurts</h5>
         <hr/>
         <Table hover bordered dark striped>
             <thead>
