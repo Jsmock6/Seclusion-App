@@ -41,7 +41,7 @@ const GemsCreate = (props) => {
        {/* <br/> */}
        
         <h3>Enter your Hidden Gem</h3>
-        <Form onSubmit= {handleSubmit}>
+        <Form onSubmit= {handleSubmit} autoComplete= "off">
             <FormGroup>
             <p className= 'pTags'>*required</p>
                 {/* <Label htmlFor= 'Location Type'/> */}

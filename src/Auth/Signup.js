@@ -35,11 +35,12 @@ const Signup = (props) => {
             {/* <br/>
             <br/>
             <br/> */}
-            <br/>
-            <br/>
-            
+            {/* <br/>
+            <br/> */}
+            {/* <hr/>
+             */}
             <h2>Sign Up</h2>
-            <Form onSubmit= {handleSubmit}>
+            <Form onSubmit= {handleSubmit} autoComplete= "off">
                 <FormGroup>
                     {/* <Label htmlFor= 'username'>Username</Label> */}
                     <Input  placeholder= 'username' onChange= {(e) => setUsername(e.target.value)}name= 'username' value={username}/>

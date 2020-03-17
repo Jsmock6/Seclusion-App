@@ -34,7 +34,7 @@ const GemsEdit= (props) => {
         <Modal isOpen={true}>
             <ModalHeader>Edit your Hidden Gem<Button onClick={()=> modalClose()} className= 'closeEdit'>Close</Button></ModalHeader>
             <ModalBody>
-                <Form onSubmit= {GemsUpdate}>
+                <Form onSubmit= {GemsUpdate} autoComplete= "off">
                     <FormGroup>
                         <Label htmlFor= 'locationType'>Edit Location Type:</Label>
                         <Input name= 'locationType' value= {editLocationType} onChange={(e) => setEditLocationType(e.target.value)}/>

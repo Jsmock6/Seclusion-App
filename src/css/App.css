@@ -92,7 +92,7 @@ p {
 
 h3 {
   color: #0A350E;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 
 .table {
@@ -104,3 +104,14 @@ h3 {
   background-color: #0A350E !important;
   
 }
+
+/* body {
+  background-image: url(./e0598e3ced1a102a6210bc6ecae0585d.gif);
+  background-size: cover;
+} */
+
+/* .auth-container {
+  background-image: url(./e0598e3ced1a102a6210bc6ecae0585d.gif);
+  background-size: cover;
+  margin: 0px;
+} */

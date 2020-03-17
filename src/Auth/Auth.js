@@ -4,6 +4,7 @@ import {Container, Row, Col} from 'reactstrap';
 import Signup from './Signup';
 import Login from './Login';
 import FrontPage from '../Home/FrontPage';
+import '../css/App.css'
 
 
 
@@ -20,7 +21,9 @@ const Auth = (props) => {
     // }, [userId]) 
     return(
         <Container className= 'auth-container'>
+            
             <FrontPage />
+            
             
             
             {/* <Sitebar /> */}

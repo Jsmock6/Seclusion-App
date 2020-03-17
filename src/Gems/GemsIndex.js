@@ -5,6 +5,8 @@ import GemTable from './GemsTable';
 import GemEdit from './GemsEdit'; 
 import APIURL from '../helpers/environment'
 import '../css/App.css';
+import Sitebar from '../Home/Navbar';
+
 
 
 const GemIndex = (props) => {
@@ -48,6 +50,7 @@ const GemIndex = (props) => {
 
     return (
         <Container>
+        {/* {props.sessionToken ? <Sitebar clearToken= {props.clearToken}/> : null} */}
             <Row>
                 <Col md='3'>
                     <GemCreate fetchGems= {fetchGems} token= {props.token}/>
@@ -62,3 +65,4 @@ const GemIndex = (props) => {
 }
 
 export default GemIndex;
+
