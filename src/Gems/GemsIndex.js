@@ -5,7 +5,7 @@ import GemTable from './GemsTable';
 import GemEdit from './GemsEdit'; 
 import APIURL from '../helpers/environment'
 import '../css/App.css';
-import Sitebar from '../Home/Navbar';
+// import Sitebar from '../Home/Navbar';
 
 
 
@@ -26,7 +26,7 @@ const GemIndex = (props) => {
         .then((res) => res.json())
             .then(logData => {
                 setGems(logData)
-                console.log('gems', logData)
+                // console.log('gems', logData)
                
             })
     }

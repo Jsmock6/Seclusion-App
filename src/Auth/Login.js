@@ -61,6 +61,10 @@ const Login = (props) => {
                     <Button className= 'loginBut' color= 'success' size= 'md' type= 'submit'>Login</Button>
             </Form>
 
+           <br/>
+           <br/>
+           <br/>
+           <br/>
            
         </div>
     )

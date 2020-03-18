@@ -20,10 +20,10 @@ const deleteGem = (gem) => {
 }
 
 const gemMapper = () => {
-    console.log(props.gems)
+    // console.log(props.gems)
     return props.gems.map((gem, index) => {
-        console.log(gem.owner);
-        console.log(props.userId)
+        // console.log(gem.owner);
+        // console.log(props.userId)
         return(
             
             <tr key= {index}>
@@ -48,7 +48,8 @@ const gemMapper = () => {
         <>
         <h5>- a little peace and quiet never hurts</h5>
         <hr/>
-        <Table hover bordered dark striped>
+        <div className="table-wrapper-scroll-y my-custom-scrollbar">
+        <Table hover dark striped bordered>
             <thead>
                 <tr>
                     <th>#</th>
@@ -62,6 +63,7 @@ const gemMapper = () => {
                 {gemMapper()}
             </tbody>
         </Table>
+        </div>
         </>
     )
 }

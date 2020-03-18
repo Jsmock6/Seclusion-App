@@ -20,24 +20,26 @@ const Auth = (props) => {
     //     }
     // }, [userId]) 
     return(
-        <Container className= 'auth-container'>
-            
-            <FrontPage />
+
+        <div className= 'frontpageContainer'>
+            <Container>
+                <FrontPage />
             
             
             
             {/* <Sitebar /> */}
-            <Row>
-                <Col md="6">
-                    <Signup updateToken= {props.updateToken} updateUserId= {props.updateUserId}/>
-                </Col>
-                
-                <Col md="6" className= 'login-col'>
-                    <Login updateToken={props.updateToken} updateUserId={props.updateUserId} setUserId={props.setUserId} />
-                </Col>  
-                 
-            </Row>
-        </Container>
+                <Row>
+                    <Col md="6">
+                        <Signup updateToken= {props.updateToken} updateUserId= {props.updateUserId}/>
+                    </Col>
+                    
+                    <Col md="6" className= 'login-col'>
+                        <Login updateToken={props.updateToken} updateUserId={props.updateUserId} setUserId={props.setUserId} />
+                    </Col>  
+                    
+                </Row>
+            </Container>
+        </div>
     )
 }
 

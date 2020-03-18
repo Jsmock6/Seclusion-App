@@ -12,7 +12,8 @@ function App() {
 
 const [sessionToken, setSessionToken] = useState(undefined); 
 const [userId, setUserId] = useState(undefined);
-console.log(typeof userId, userId);
+// const [clearUserId, setClearUserId] = usestate(undefined);
+// console.log(typeof userId, userId);
 
 useEffect(() => {
   if (localStorage.getItem('token')){
@@ -31,6 +32,11 @@ const updateToken = (newToken) => {
   console.log(sessionToken);
 }
 
+// const clearUserId = () => {
+//   localStorage.clear();
+//   setUserId(undefined);
+// }
+
 const clearToken = () => {
   localStorage.clear();
   setSessionToken(undefined);
@@ -48,7 +54,7 @@ const protectedViews = () => {
   return (
     <div>
       {/* <Sitebar clickLogout= {clearToken}/> */}
-      {sessionToken === localStorage.getItem('token') ? <Sitebar clickLogout= {clearToken}/> : null}
+      {sessionToken === localStorage.getItem('token') ? <Sitebar clickLogout= {clearToken} /> : null}
       {protectedViews()}
       {/* //setToken= {this.setSessionState}/> */}
     </div>

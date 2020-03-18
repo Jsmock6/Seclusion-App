@@ -101,7 +101,9 @@ h3 {
   /* background-blend-mode: color; */
   /* background-color: !important; */
   /* border: solid green 5px !important; */
-  background-color: #0A350E !important;
+  background-color: rgb(26, 73, 12) !important;
+  
+  
 }
 /* .gemButton {
   z-index: 10 !important;
@@ -111,10 +113,28 @@ h3 {
 /* body {
   background-image: url(./e0598e3ced1a102a6210bc6ecae0585d.gif);
   background-size: cover;
+  
 } */
 
-/* .auth-container {
+.frontpageContainer {
   background-image: url(./e0598e3ced1a102a6210bc6ecae0585d.gif);
   background-size: cover;
-  margin: 0px;
-} */
+  /* margin: 0px !important; */
+  /* margin-top: 0px !important; */
+  /* padding: 0px !important; */
+  /* margin-bottom: 0px !important; */
+  /* overflow: none; */
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 480px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+
+  /* body {
+    background-color: rgba(48, 25, 3, 0.548) !important;
+  } */
