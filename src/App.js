@@ -2,6 +2,7 @@ import React, {useState, useEffect } from 'react';
 import Sitebar from './Home/Navbar';
 import Auth from './Auth/Auth';
 import GemsIndex from './Gems/GemsIndex';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./css/App.css" 
 
 
@@ -9,7 +10,9 @@ import "./css/App.css"
 
 function App() {
 
-const [sessionToken, setSessionToken] = useState(''); 
+const [sessionToken, setSessionToken] = useState(undefined); 
+const [userId, setUserId] = useState(undefined);
+console.log(typeof userId, userId);
 
 useEffect(() => {
   if (localStorage.getItem('token')){
@@ -17,23 +20,35 @@ useEffect(() => {
   }
 }, [])
 
+const updateUserId = (newId) => {
+  localStorage.setItem('userId', newId);
+  setUserId(newId)
+}
+
 const updateToken = (newToken) => {
   localStorage.setItem('token', newToken);
   setSessionToken(newToken);
   console.log(sessionToken);
 }
+
 const clearToken = () => {
   localStorage.clear();
-  setSessionToken('');
+  setSessionToken(undefined);
 }
+// const protectedViews = () => {
+//   return (
+//     sessionToken === undefined ? <Auth updateToken={updateToken}/> : <GemsIndex token= {sessionToken}/>
+//   ) 
+// }
+
 const protectedViews = () => {
-  return (sessionToken === localStorage.getItem('token') ? <GemsIndex token= {sessionToken}/>
-  : <Auth updateToken={updateToken}/>) 
+  return sessionToken === undefined ? <Auth updateToken={updateToken} updateUserId={updateUserId} /> : <GemsIndex token={sessionToken} userId={userId} />
 }
 
   return (
     <div>
-      {sessionToken ? <Sitebar clickLogout= {clearToken}/> : null}
+      {/* <Sitebar clickLogout= {clearToken}/> */}
+      {sessionToken === localStorage.getItem('token') ? <Sitebar clickLogout= {clearToken}/> : null}
       {protectedViews()}
       {/* //setToken= {this.setSessionState}/> */}
     </div>

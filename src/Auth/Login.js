@@ -20,7 +20,13 @@ const Login = (props) => {
         }).then (
             (response) => response.json()
         ).then((data) => {
-            props.updateToken(data.sessionToken) 
+            console.log(data)
+            if(data.error){
+                console.log('unable to authenticate')
+            } else {
+                props.updateToken(data.sessionToken) 
+                props.updateUserId(data.user.id);
+            }
             // props.updateUserId(data.id)
         })
         }else{

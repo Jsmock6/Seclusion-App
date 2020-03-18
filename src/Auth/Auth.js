@@ -33,7 +33,7 @@ const Auth = (props) => {
                 </Col>
                 
                 <Col md="6" className= 'login-col'>
-                    <Login updateToken= {props.updateToken} updateUserId= {props.updateUserId}/>
+                    <Login updateToken={props.updateToken} updateUserId={props.updateUserId} setUserId={props.setUserId} />
                 </Col>  
                  
             </Row>

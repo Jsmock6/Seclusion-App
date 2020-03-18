@@ -26,7 +26,7 @@ const GemIndex = (props) => {
         .then((res) => res.json())
             .then(logData => {
                 setGems(logData)
-                // console.log('gems', logData)
+                console.log('gems', logData)
                
             })
     }
@@ -56,7 +56,7 @@ const GemIndex = (props) => {
                     <GemCreate fetchGems= {fetchGems} token= {props.token}/>
                 </Col>
                 <Col md='9'>
-                    <GemTable gems= {gems} editUpdateGem={editUpdateGem} updateOn={updateOn} fetchGems= {fetchGems} token= {props.token}/>
+                    <GemTable gems= {gems} editUpdateGem={editUpdateGem} updateOn={updateOn} fetchGems= {fetchGems} token= {props.token} userId={props.userId}/>
                 </Col>
                 {updateActive ? <GemEdit gemToUpdate= {gemToUpdate} updateOff= {updateOff} token={props.token} fetchGems= {fetchGems}/> : <> </>}
             </Row>

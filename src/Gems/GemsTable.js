@@ -22,7 +22,8 @@ const deleteGem = (gem) => {
 const gemMapper = () => {
     console.log(props.gems)
     return props.gems.map((gem, index) => {
-        console.log(gem)
+        console.log(gem.owner);
+        console.log(props.userId)
         return(
             
             <tr key= {index}>
@@ -33,8 +34,8 @@ const gemMapper = () => {
                 <td>{gem.locationCoordinates}</td>
                 <td>{gem.description}</td>
                 <td>
-                   {gem.owner === gem.userId ? <Button outline color= 'success' size= 'sm' onClick={() => {props.editUpdateGem(gem); props.updateOn()}}>Edit</Button> : null}
-                {gem.owner === gem.userId ? <Button outline color= 'warning'  size= 'sm' onClick={() => {deleteGem(gem)}}>Delete</Button> : null}
+                {gem.owner == localStorage.getItem('userId') ? <Button className='gemButton' outline color= 'success' size= 'sm' onClick={() => {props.editUpdateGem(gem); props.updateOn()}}>Edit</Button> : null}
+                {gem.owner == localStorage.getItem('userId') ? <Button className='gemButton' outline color= 'warning'  size= 'sm' onClick={() => {deleteGem(gem)}}>Delete</Button> : null}
                 </td>
                 
             </tr>
