@@ -36,17 +36,6 @@ const Login = (props) => {
 
     return (
         <div>
-            
-            {/* <br/>
-            <br/>
-            <br/> */}
-            {/* <br/>
-            <br/> */}
-            {/* <hr/> */}
-            
-
-
-
             <h2>Login</h2>
             <Form onSubmit= {handleSubmit} autoComplete= "off">
                 <FormGroup>

@@ -31,14 +31,6 @@ const Signup = (props) => {
 
     return (
         <div>
-           
-            {/* <br/>
-            <br/>
-            <br/> */}
-            {/* <br/>
-            <br/> */}
-            {/* <hr/>
-             */}
             <h2>Sign Up</h2>
             <Form onSubmit= {handleSubmit} autoComplete= "off">
                 <FormGroup>
